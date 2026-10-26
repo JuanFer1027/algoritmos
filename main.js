@@ -480,7 +480,7 @@ function descuentoCliente() {
     alert("El descuento fue de: "+ descuento + " y el total a pagar es de: "+ total);
 }
 
-function cajeroAutomatico() {
+function cajero_Automatico() {
     let saldo_disponible, valor_retiro;
 
     alert("Este algoritmo permite hacer un cajero automatico");
