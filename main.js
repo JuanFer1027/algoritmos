@@ -943,7 +943,7 @@ function validacionContraseña() {
 }
 
 function menuOpciones() {
-    let opcion;
+    let opcion, n1, n2, operacion;
 
     alert("Este algoritmo muestra un menu con opciones");
     opcion = 0;
@@ -960,7 +960,22 @@ function menuOpciones() {
         } else if (opcion == 2) {
             console.log("Este menu fue programado en JavaScript");
         } else if (opcion == 3) {
-            console.log("2 + 2 = 4");
+            n1 = parseFloat(prompt("Ingrese el primer valor"));
+            n2 = parseFloat(prompt("Ingrese el segundo valor"));
+            operacion = prompt("Ingrese la operacion que necesita (+, -, *, /)");
+            if (operacion == "+") {
+                console.log("Resultado de la suma es: "+ (n1 + n2));
+            } else if (operacion == "-") {
+                console.log("Resultado de la resta es: "+ (n1 - n2));
+            } else if (operacion == "*") {
+                console.log("Resultado de la multiplicacion es: "+ (n1 * n2));
+            } else if (operacion == "/") {
+                if (n2 != 0) {
+                    console.log("Resultado de la division es: "+ (n1 / n2));
+                } else {
+                    console.log("No se puede dividir entre cero");
+                }
+            }
         } else if (opcion == 4) {
             console.log("Saliendo del Sistema.....");
         } else {
